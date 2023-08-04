@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!-- swal -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
+
+</head>
+
+<body>
+    <div id="header_wrapper">
+        <div id="header">
+            <li id="sitename">
+                <a href="#">facebook</a>
+            </li>
+            <form action="post">
+                <li>Email or Phone <br> <input type="text" name="email" id="email"><br>
+                    <label for="" id="email_error">Enter a valid mail id or phone no.</label>
+                    <label for="" id="email2_error">Enter atleast 6 characters or 10 no.</label>
+                </li>
+                <li>Password <br> <input type="password" name="password" id="password"> <br>
+                    <!-- <a href="#">Forgotten account?</a><br> -->
+                    <label for="" id="password_error">Enter a password!</label>
+                    <label for="" id="password2_error">Enter atleast 8 characters.</label>
+                </li>
+                <li><input type="button" name="login" value="Log In" id="login"></li>
+            </form>
+        </div>
+
+    </div>
+    <div id="wrapper">
+        <div id="div1">
+            <p>Facebook helps you connect and share with the people in your life</p>
+            <img src="bg.png" alt="">
+        </div>
+        <div id="div2">
+            <h1>Create an account</h1>
+            <p>It's free and always will be.</p>
+            <li>
+                <input type="text" placeholder="First Name" id="firstname">
+                <label for="" id="fname_error">Enter your First Name</label>
+                <label for="" id="fname2_error">Enter atleast 3 characters</label>
+                <br><br>
+                <input type="text" placeholder="Surname" id="surname">
+                <label for="" id="lname_error">Enter your Last Name</label>
+                <label for="" id="lname2_error">Enter atleast 3 characters</label>
+            </li>
+            <li>
+                <input type="text" placeholder="Mobile Number or email Address" id="email2">
+                <label for="" id="email2_error1">Enter a valid email id</label>
+                <label for="" id="email2_error2">Enter atleast 6 characters</label>
+            </li>
+            <li>
+                <input type="text" placeholder="Re-enter mobile number or email address" id="Re_email2">
+                <label for="" id="Re_email2_error1">Re-enter your email id</label>
+                <label for="" id="Re_email2_error2">Enter the same email id</label>
+            </li>
+            <li>
+                <input type="password" placeholder="New Password" id="password2">
+                <label for="" id="password2_error1">Enter a password</label>
+                <label for="" id="password2_error2">Enter atleast 8 characters</label>
+            </li>
+            <p>Birthday</p>
+            <li id="birthday">
+                <select name="" id="day">
+                    <option value="">Day</option>
+
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="" id="month">
+                    <option value="">Month</option>
+
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+
+                <select name="" id="year">
+                    <option value="">Year</option>
+
+                    <option value="1980">1980</option>
+                    <option value="19981">1981</option>
+                    <option value="1982">1982</option>
+                    <option value="1983">1983</option>
+                    <option value="1984">1984</option>
+                    <option value="1985">1985</option>
+                    <option value="1986">1986</option>
+                    <option value="1987">1987</option>
+                    <option value="1988">1988</option>
+                    <option value="1989">1989</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+
+                </select>
+
+                <a href="#">Why do i need to provide my Date of Birth</a><br>
+
+                <label for="" id="birthday_error">Select your birthday</label>
+                <label for="" id="birthday_error1">Select Your birthdate</label>
+                <label for="" id="birthday_error2">Select Your birthmonth</label>
+                <label for="" id="birthday_error3">Select Your birthyear</label>
+
+            </li>
+            <li id="gender">
+                <input type="radio" name="a">
+                <label for="">Female</label>
+                <input type="radio" name="a">
+                <label for=""> Male</label><br><br>
+                <label for="" id="gender_error">Select your gender</label>
+            </li>
+            <li id="terms">
+                By clicking Create an account, you agree to our <a href="">Terms</a> and that
+                <br>you have read our <a href="">Data Policy</a>,including our <a href="">Cookie Use</a>
+            </li>
+            <li> <input type="button" value="Create an account" id="submit"></li>
+            <li id="create_page">
+                <a href="">Create a Page</a>for a celebrity,brand or bussiness.
+            </li>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // login -------------------------------------------------------------------------
+
+    $(document).ready(function () {
+        $("#email").blur(function () {
+            let email = $(this).val()
+
+            if (email.length < 6) {
+                $("#email2_error").show()
+                $("#email_error").hide()
+            }
+            else {
+                $("#email2_error").hide()
+            }
+
+        })
+        $("#password").blur(function () {
+            let psd = $(this).val()
+
+            if (psd.length < 8) {
+                $("#password2_error").show()
+                $("#password_error").hide()
+            }
+            else {
+                $("#password2_error").hide()
+            }
+
+        })
+    })
+
+    $("#login").click(function () {
+        let email = $("#email").val()
+        let psd = $("#password").val()
+
+        if (email === "" && psd === "") {
+            $("#email_error").show()
+            $("#password_error").show()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter a valid email and password'
+            })
+        }
+
+        else if (email.length < 6) {
+            $("#email2_error").show()
+            $("#email_error").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter atleast 6 characters or 10 phone no.'
+            })
+        }
+
+        else if (psd.length < 8) {
+            $("#password2_error").show()
+            $("#password_error").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter atleast 8 characters'
+            })
+        }
+
+        else {
+            swal.fire({
+                icon: 'success',
+                title: 'Submitted Successfully',
+                html: 'Mail id:' + $("#email").val()
+            })
+        }
+    })
+
+
+    // login end ------------------------------------------------------------------------------------------------------------------
+
+
+    $("#firstname").blur(function () {
+        let fname = $(this).val()
+
+        if (fname.length < 3) {
+            $("#fname2_error").show()
+        }
+        else {
+            $("#fname2_error").hide()
+        }
+    })
+    $("#surname").blur(function () {
+        let lname = $(this).val()
+
+        if (lname.length < 3) {
+            $("#lname2_error").show()
+        }
+        else {
+            $("#lname2_error").hide()
+        }
+
+    })
+    $("#email2").blur(function () {
+        let email = $(this).val()
+
+        if (email.length < 6) {
+            $("#email2_error2").show()
+        }
+        else {
+            $("#email2_error2").hide()
+        }
+
+        $("#Re_email2").blur(function () {
+            let remail = $(this).val()
+
+            if (remail === email) {
+                $("#Re_email2_error1").show()
+            }
+            else {
+                $("#Re_email2_error1").hide()
+            }
+        })
+
+    })
+
+    $("#password2").blur(function () {
+        let passd = $(this).val()
+
+        if (passd.length < 8) {
+            $("#password2_error2").show()
+        }
+        else {
+            $("#password2_error2").hide()
+        }
+    })
+
+    $("#day").blur(function () {
+        // let birth = $(this).val()
+
+        let day = $("#day").val()
+
+        if (day == "") {
+            $("#birthday_error1").show()
+        }
+        else {
+            $("#birthday_error1").hide()
+        }
+    })
+    $("#month").blur(function () {
+        let month = $("#month").val()
+
+        if (month == "") {
+            $("#birthday_error2").show()
+        }
+        else {
+            $("#birthday_error2").hide()
+        }
+    })
+
+    $("#year").blur(function () {
+        let year = $("#year").val()
+
+        if (year == "") {
+            $("#birthday_error3").show()
+        }
+        else {
+            $("#birthday_error3").hide()
+        }
+    })
+
+
+    // submit btn------------------------------------------------------------------------
+
+    $("#submit").click(function () {
+        let fname = $("#firstname").val()
+        let lname = $("#surname").val()
+        let email = $("#email2").val()
+        let remail = $("#Re_email2").val()
+        let psd = $("#password2").val()
+        let day = $("#day").val()
+        let month = $("#month").val()
+        let year = $("#year").val()
+        let gender = $("#gender").val()
+
+        if (fname === "" && lname === "" && email === "" && remail === "" && psd === "" && day === "" && month === "" && year === "" && gender === "") {
+            $("#fname_error").show()
+            $("#lname_error").show()
+            $("#email2_error1").show()
+            $("#Re_email2_error1").show()
+            $("#password2_error1").show()
+            $("#birthday_error").show()
+            $("#gender_error").show()
+
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Enter Your full details'
+            })
+
+        }
+        else{
+            $("#fname_error").hide()
+            $("#lname_error").hide()
+            $("#email2_error1").hide()
+            $("#Re_email2_error1").hide()
+            $("#password2_error1").hide()
+            $("#birthday_error").hide()
+            $("#gender_error").hide()
+
+            swal.fire({
+                icon: 'success',
+                title: 'Submitted Successfully',
+                html: 'Mail id:' + $("#email").val()
+            })
+        }
+
+        if (fname.length < 3) {
+            $("#fname2_error").show()
+            $("#fname_error").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter atleast 3 letters in your firstname'
+            })
+        }
+        else {
+            $("#fname2_error").hide()
+        }
+
+        if (lname.length < 3) {
+            $("#lname2_error").show()
+            $("#lname_error").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter atleast 3 letters in your surname'
+            })
+        }
+        else {
+            $("#lname2_error").hide()
+        }
+
+        if (email.length < 6) {
+            $("#email2_error1").show()
+            $("#email2_error2").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter atleast 6 characters '
+            })
+        }
+        else {
+            $("#email2_error1").hide()
+        }
+        if (email !== remail) {
+            $("#Re_email2_error2").show()
+            $("#Re_email2_error1").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter same email id '
+            })
+        }
+        else {
+            $("#Re_email2_error2").hide()
+        }
+        if (psd.length < 8) {
+            $("#password2_error1").show()
+            $("#password2_error2").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter atleast 8 characters'
+            })
+        }
+        else {
+            $("#password2_error1").hide()
+        }
+        if (day === "") {
+            $("#birthday_error1").show()
+            $("#birthday_error2").hide()
+            $("#birthday_error3").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter your birthdate'
+            })
+        }
+        else {
+            $("#birthday_error1").hide()
+        }
+        if (month === "") {
+            $("#birthday_error1").hide()
+            $("#birthday_error2").show()
+            $("#birthday_error3").hide()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter your birthmonth'
+            })
+        }
+        else {
+            $("#birthday_error2").hide()
+        }
+        if (year === "") {
+            $("#birthday_error1").hide()
+            $("#birthday_error2").hide()
+            $("#birthday_error3").show()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter your birthyear'
+            })
+        }
+        else {
+            $("#birthday_error3").hide()
+        }
+        if (gender === "") {
+            $("#gender_error").show()
+            swal.fire({
+                icon: 'error',
+                title: 'Submission Failed',
+                text: 'Please Enter your gender'
+            })
+        }
+
+        
+    })
+
+
+
+</script>
+
+
+</html>
